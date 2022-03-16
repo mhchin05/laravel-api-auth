@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "4f0b50d1-562c-4df6-aedb-f396b7a4ae57",
+		"name": "usertest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getbyid",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"created_at\": \"2022-03-15T14:58:20.000000Z\",\n    \"updated_at\": \"2022-03-15T14:58:20.000000Z\",\n    \"name\": \"Dr. Toby Reichert III\",\n    \"email\": \"finn47@hotmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments"
+					]
+				},
+				"description": "post"
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"created_at\": \"2022-03-15T14:58:20.000000Z\",\n    \"updated_at\": \"2022-03-15T14:58:20.000000Z\",\n    \"name\": \"Dr. Toby Reichert III\",\n    \"email\": \"finn4799999@hotmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/comments/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/comments/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
